@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val edNome = binding.edNome
         val btLogin = binding.btlogin
         val edSenha = binding.edSenha
+        //out
 
         btLogin.setOnClickListener {
             if(edNome.text.toString()=="admin") {
