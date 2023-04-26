@@ -4,26 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B2F479"
     tools:context=".SegundaTelaActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:text="TextView"
+        android:layout_width="358dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/termos_de_responsabilidade"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
-        android:text="Button"
+        android:layout_marginTop="480dp"
+        android:text="@string/aceitar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="350dp"
+        android:layout_height="418dp"
+        android:background="#E1CEFFC9"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="138dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="322dp"
+        android:layout_height="399dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/todos_que_desejarem_acessar_os_servi_os_da_plataforma_dever_o_concordar_com_as_normas_contidas_neste_documento_de_modo_que_as_pessoas_que_n_o_concordarem_com_quaisquer_das_regras_presentes_nos_termos_e_condi_es_gerais_de_uso_n_o_dever_o_utilizar_o_servi_o_tal_documento_deve_ser_acompanhado_da_pol_tica_de_privacidade_da_plataforma_importante_pontuar_que_pol_tica_de_privacidade_se_refere_a_informa_es_espec_ficas_de_coleta_armazenamento_e_prote_o_de_dados_pessoais_de_usu_rios_de_um_site_ou_aplicativo_termos_e_condi_es_gerais_de_uso_servem_para_indicar_as_regras_que_devem_ser_respeitadas_ao_utilizar_a_plataforma_ou_seja_informam_as_obriga_es_e_direitos_dos_usu_rios_como_tamb_m_da_plataforma_visto_que_o_mesmo_serve_como_uma_esp_cie_de_contrato_de_ades_o"
+        android:textAlignment="center"
+        android:textColor="#2E7D32"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="44dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

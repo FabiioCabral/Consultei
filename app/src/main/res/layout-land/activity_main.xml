@@ -6,59 +6,163 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:text="@string/app_name"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="#6306E8"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="105dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B2F479"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="93dp">
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="#6306E8"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="93dp"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar3"
+            android:layout_width="726dp"
+            android:layout_height="37dp"
+            android:layout_gravity="bottom"
+            app:backgroundTint="#6306E9"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="389dp"
+            tools:ignore="BottomAppBar,MissingConstraints,VisualLintBottomAppBar" />
+
+        <EditText
+            android:id="@+id/edNome"
+            android:layout_width="265dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateClickableBoundsCheck,DuplicateIds,DuplicateSpeakableTextCheck,MissingConstraints"
+            tools:layout_editor_absoluteX="422dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/edSenha"
+            android:layout_width="253dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="@+id/edNome"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edNome"
+            app:layout_constraintTop_toBottomOf="@+id/edNome"
+            tools:ignore="DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck"
+            android:autofillHints="" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/remember"
+            app:layout_constraintStart_toStartOf="@+id/edSenha"
+            app:layout_constraintTop_toBottomOf="@+id/edSenha"
+            tools:ignore="DuplicateClickableBoundsCheck,DuplicateIds,DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/btlogin"
+            android:layout_width="172dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@+id/edSenha"
+            app:layout_constraintHorizontal_bias="0.728"
+            app:layout_constraintStart_toStartOf="@+id/edSenha"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox"
+            tools:ignore="DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="185dp"
+            android:layout_height="66dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/consultei2"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,TextSizeCheck"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="57dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar3"
+        android:layout_width="726dp"
+        android:layout_height="37dp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#6306E9"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-24dp"
+        tools:ignore="BottomAppBar,DuplicateIds,MissingConstraints,VisualLintBottomAppBar,VisualLintBounds" />
 
     <EditText
         android:id="@+id/edNome"
         android:layout_width="265dp"
         android:layout_height="65dp"
-        android:layout_marginStart="232dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#CC8888"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="422dp"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edSenha"
         android:layout_width="253dp"
         android:layout_height="57dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="12dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="@+id/edNome"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/edNome"
-        app:layout_constraintTop_toBottomOf="@+id/edNome" />
+        app:layout_constraintTop_toBottomOf="@+id/edNome"
+        tools:ignore="DuplicateIds"
+        android:importantForAutofill="no" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="16dp"
         android:text="@string/remember"
         app:layout_constraintStart_toStartOf="@+id/edSenha"
-        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
+        app:layout_constraintTop_toBottomOf="@+id/edSenha"
+        tools:ignore="DuplicateIds" />
 
     <Button
         android:id="@+id/btlogin"
         android:layout_width="172dp"
         android:layout_height="49dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="8dp"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="@+id/edSenha"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.728"
         app:layout_constraintStart_toStartOf="@+id/edSenha"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:ignore="DuplicateIds" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,15 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B2F479"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:text="@string/app_name"
-        android:textSize="24sp"
+        android:layout_marginTop="64dp"
+        android:drawingCacheQuality="high"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/consultei"
+        android:textColor="#050505"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#E85B5B"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,24 +31,29 @@
         android:layout_width="265dp"
         android:layout_height="65dp"
         android:layout_marginTop="120dp"
+        android:background="#1BFBCFCF"
+        android:backgroundTint="#000000"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/edSenha"
         android:layout_width="253dp"
         android:layout_height="57dp"
         android:layout_marginTop="56dp"
+        android:background="#9ED96C"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="@+id/edNome"
         app:layout_constraintStart_toStartOf="@+id/edNome"
-        app:layout_constraintTop_toBottomOf="@+id/edNome" />
+        app:layout_constraintTop_toBottomOf="@+id/edNome"
+        android:autofillHints="" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -51,14 +64,46 @@
         app:layout_constraintStart_toStartOf="@+id/edSenha"
         app:layout_constraintTop_toBottomOf="@+id/edSenha" />
 
-    <Button
-        android:id="@+id/btlogin"
-        android:layout_width="172dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/login"
-        app:layout_constraintEnd_toEndOf="@+id/edSenha"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="@+id/edSenha"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+<!--    <Button-->
+<!--        android:id="@+id/btlogin"-->
+<!--        android:layout_width="172dp"-->
+<!--        android:layout_height="49dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:background="#F7000000"-->
+<!--        android:backgroundTint="#833E3E"-->
+<!--        android:text="@string/login"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/edSenha"-->
+<!--        app:layout_constraintHorizontal_bias="0.503"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/edSenha"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/checkBox" />-->
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#6306E9"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-24dp"
+        tools:ignore="BottomAppBar,MissingConstraints,VisualLintBottomAppBar,VisualLintBounds" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="#6306E9"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="697dp"
+        tools:ignore="BottomAppBar,MissingConstraints,VisualLintBottomAppBar,VisualLintBounds" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:background="#6306E8"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="105dp"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
